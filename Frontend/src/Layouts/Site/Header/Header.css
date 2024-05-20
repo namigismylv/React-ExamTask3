@@ -1,0 +1,40 @@
+.header {
+    background-color: #222222;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+#headerRow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .header__left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .header__middle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+      a {
+        font-weight: 400;
+        font-size: 14px;
+        text-transform: uppercase;
+        color: white;
+      }
+    }
+  }
+}
+.header__right {
+  margin-left: 150px;
+  i{
+    color: white;
+
+  }
+}

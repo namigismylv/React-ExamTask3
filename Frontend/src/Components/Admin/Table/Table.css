@@ -1,0 +1,13 @@
+table{
+    width: 80% !important;
+    margin: auto;
+    margin-top: 170px;
+    margin-bottom: 170px !important;
+    th{
+        vertical-align: middle;
+    }
+    td{
+        vertical-align: middle !important;
+    }
+
+}

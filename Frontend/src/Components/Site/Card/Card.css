@@ -1,0 +1,40 @@
+.card{
+    border: none;
+    img{
+        border-radius: 8px;
+    }
+    .body{
+        padding: 35px 0px 0px;
+    }
+}
+.card-text{
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 22px;
+    color: #333333 ;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+
+}
+.card-desc{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.7;
+    color: #666666;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.learnMore{
+    font-weight: 400;
+    font-size: 12px;
+    color: #222222;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.foodsInput{
+    padding: 8px 10px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    border: 1px solid #333333;
+    outline: none;
+}
