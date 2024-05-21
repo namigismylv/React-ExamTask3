@@ -12,6 +12,7 @@ function App() {
   const routes = createBrowserRouter(ROUTES)
   const [basketItems, setBasketItems] = useState(localStorage.getItem("basketItems") ? JSON.parse(localStorage.getItem("basketItems")) : [])
   const [search,setSearch]=useState("")
+  const [sort,setSort]=useState(null)
   useEffect(() => {
     axios.get("http://localhost:7000/foods").then(res => {
       setData(res.data)
@@ -35,7 +36,7 @@ function App() {
       setBasketItems([...basketItems.filter(x => x.item._id !== item._id)])
   }
   const contextData = {
-    data, setData, basketItems, setBasketItems, addToBasket, deleteFromBasket,search,setSearch
+    data, setData, basketItems, setBasketItems, addToBasket, deleteFromBasket,search,setSearch,sort,setSort
   }
 
   return (

@@ -4,7 +4,7 @@ import { useContext } from 'react';
 import MainContext from '../../../Context/Context';
 import axios from 'axios';
 const Add = () => {
-  const { setData } = useContext(MainContext)
+  const {data,setData } = useContext(MainContext)
   return (
     <div> 
       <Formik
@@ -12,8 +12,7 @@ const Add = () => {
 
         onSubmit={(values, { setSubmitting }) => {
           axios.post("http://localhost:7000/foods",{...values}).then(res => {
-            setData(res.data)
-            console.log(res);
+            setData([...data,res.data])
           })
 
         }}
